@@ -10,10 +10,59 @@
             <img src="images/Chef logo.png" alt="Website logo" width="150" height="150">
         </header>
         <main>
+        <h1><b>Welcome to our contact page</b></h1>
+        <p>If you have any questions or concerns you can call us at 416-376-9980</p>
+        <p>You can also email us at contact@restaurant.ca</p>
+        <p>You can also contact us through the form below if you have any complaints</p>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" placeholder="Enter your first name"><br>
+            <label for="lastName">Last name:</label>
+            <input type="text" placeholder="Enter your last name:"><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your Email"><br>
+            <label for="dateOfIssue">Date of issue</label>
+            <input type="date" placeholder="Enter the date when you had your issue"><br>
+            <label for="Complaint">Complaint</label>
+            <input type="text" placeholder="Enter your complaint"><br>
+            <p id="sub_text" style="display:none;">Thank you for submitting your complaint</p>
+            <script>
+                function submission_text(){
+                    document.getElementById("sub_text").style.display = "block"
+                }
+            </script>
+            <button type="button" onclick="submission_text()">Submit</button>
+        </form>
+        <h2><b>Locations</b></h2>
+        <h3><b>Toronto</b></h3>
             <address>
-                1643 main street<br>
-                Toronto, ON<br>
-                416-376-9980
+                164 Kings St
+            </address>
+            <address>
+                162 Dundas St
+            </address>
+            <address>
+                139 Bloor St
+            </address>
+            <h4><b>Burlington</b></h4>
+            <address>
+                309 Brant St
+            </address>
+            <address>
+                486 Guelph Line
+            </address>
+            <address>
+                452 Ceder Springs Rd
+            </address>
+            <h5><b>Mississuga</b></h5>
+            <address>
+                783 Mavis Rd
+            </address>
+            <address>
+                652 Winston Churchill Blvd
+            </address>
+            <address>
+                493 Erin Mills Pkwy
             </address>
             <nav>
                 <ul>
@@ -25,10 +74,10 @@
             </nav>
         </main>
     <footer>
-        <a href="Home">Home page</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About us</a>
-        <a href="contact.html">Contact us</a>
+        <p>Twitter = restaurant</p>
+        <p>Instagram = restaurant</p>
+        <p>Facebook = restaurant</p><br>
+        <p>Copyright &copy; restaurant</p>
     </footer>
     </body>
 </html>
