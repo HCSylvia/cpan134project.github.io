@@ -1,4 +1,43 @@
 header {
-    background-color: aqua;
-    top: 0px;
+    background-color: #fbc67e;
+    margin-top: 0px;
+    height: 150px;
+    text-align: center;
+    border: 4px solid black;
+    font-size: 30px;
+
 }
+
+img#logo {
+    float: left;
+    margin-top: -150px;
+    margin-left: 0px;
+    
+}
+
+nav ul {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+body {
+    background-color: rgb(236, 231, 231);
+}
+
+footer {
+    border: 2px solid black;
+    position: relative;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: #fbc67e;;
+}
+
