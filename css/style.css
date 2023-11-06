@@ -29,6 +29,11 @@ nav li {
     
 }
 
+nav {
+    text-align: center;
+    margin-top: 25px;
+}
+
 body {
     background-color: rgb(236, 231, 231);
 }
@@ -41,3 +46,53 @@ footer {
     background-color: #fbc67e;;
 }
 
+/* CSS for Slideshow on home.html */
+
+#slideshow {
+    text-align: center;
+    width: 600px;
+    height: 575px;
+    
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border: 25px outset #ab884d;
+    border-radius: 2px;
+    font-family: Merienda;
+    justify-content: center;
+}
+
+.slidesection {
+    display: none;
+    height: 300px;
+    width: 400px;
+    margin: inherit;
+    font-family: inherit;
+    margin-bottom: 103px;
+    margin-top: 25px;
+}
+
+.next, .previous {  
+    background-color: pink;
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 20px 10px;
+    font-family: Merienda;
+}
+
+.caption {
+    margin-bottom: 50px;
+}
+
+.numberOf {
+    margin-top: 0px;
+}
+
+.slidesection img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}

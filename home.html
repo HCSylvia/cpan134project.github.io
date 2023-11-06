@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    
 </head>
 <body>
     <header id="top">
@@ -21,47 +23,60 @@
         </ul>
     </nav>
     <main>
-        <div id="slideshow"> <!--Container for entire slideshow-->
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/poutine.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/salad1.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/pasta_with_pesto.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/burger_fries.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/burritos.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/beef_stirfry.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/penne_pasta.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/poutine.jpg" width="500px" height="500px">
-            </div>
-            <div class= slides>
-                <p class>1 of x</p>
-                <img src="images/poutine.jpg" width="500px" height="500px">
+        <div id="slideshow"> <!--Container for slideshow-->
+            <div class= "slidesection" style="display: block;">
+                <p class =numberOf>1 of 8</p>
+                <img src="images/poutine.jpg">
+                <p class="caption">Poutine with alfredo, spinach, mushrooms, bacon.</p>
             </div>
 
-                <a class="previous" onclick="">Previous</a>
-                <a class="next" onclick="">Next</a>
+            <div class= "slidesection">
+                <p class =numberOf>2 of 8</p>
+                <img src="images/salad1.jpg">
+                <p class="caption">Mixed salad with pomegranate, grapefruit, egg and potatoes. </p>
+            </div>
+
+            <div class= "slidesection">
+                <p class =numberOf>3 of 8</p>
+                <img src="images/pasta_with_pesto.jpg">
+                <p class="caption">Bowtie pasta pesto</p>
+            </div>
+
+            <div class= "slidesection"  >
+                <p class =numberOf>4 of 8</p>
+                <img src="images/burger_fries.jpg" style="object-position: 10% 100%;">
+                <p class="caption">Crispy bacon and onion burger with pub fries</p>
+            </div>
+
+            <div class= "slidesection">
+                <p class =numberOf>5 of 8</p>
+                <img src="images/burritos.jpg">
+                <p class="caption">Vegetarian burritos</p>
+            </div>
+
+            <div class= "slidesection">
+                <p class =numberOf>6 of 8</p>
+                <img src="images/beef_stirfry.jpg">
+                <p class="caption">Beef stir fry with carrots, green onion, noodles, sesame seeds</p>
+            </div>
+
+            <div class= "slidesection">
+                <p class =numberOf>7 of 8</p>
+                <img src="images/penne_pasta.jpg">
+                <p class="caption">Creamy penne pasta</p>
+            </div>
+
+            <div class= "slidesection">
+                <p class =numberOf>8 of 8</p>
+                <img src="images/beef_vegetables.jpg">
+                <p class="caption">Braised beef with vegetables, wine reduction</p>
+            </div>
+
+            <button class="previous" onclick="previousImage()">Previous</button>
+            <button class="next" onclick="nextImage()">Next</button>  
+
         </div>
+        <script src="/script.js"></script> 
     </main>
     <footer>
         <p>Twitter = restaurant</p>
