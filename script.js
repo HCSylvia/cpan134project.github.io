@@ -30,3 +30,7 @@ function displayImage(indexNum) {
 
 }
 
+$(document).ready(function(){
+    
+})
+
