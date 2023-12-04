@@ -4,6 +4,7 @@
         <title>Menu</title>
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/menu.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     </head>
     <body>
@@ -21,21 +22,96 @@
             </ul>
         </nav>
         <main>
-            <h1><b>Breakfast</b></h1>
-            <p><b>Scrambled Eggs</b></p>
-            <p>$6.99</p>
-            <p><b>Scrambled Eggs and Toast</b></p>
-            <p>$10.99</p>
-            <h2><b>Lunch</b></h2>
-            <p><b>Hamburger</b></p>
-            <p>$8.99</p>
-            <p><b>Cheeseburger</b></p>
-            <p>$12.99</p>
-            <h3><b>Dinner</b></h3>
-            <p><b>Steak</b></p>
+            <h1><b>Beef Stirfry</b></h1>
+            <p>$19.99</p>
+            <img id="img1" src="images/beef_stirfry.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="beef_stirfry_show()">Click to show the beef stirfry</button><br>
+            <button type="button" onclick="beef_stirfry_hide()">Click to hide the beef stirfry</button>
+            <h1><b>Beef with Vegetables</b></h1>
+            <p>$23.99</p>
+            <img id="img2" src="images/beef_vegetables.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="beef_with_vegetables_show()">Click to show the beef with vegetables</button><br>
+            <button type="button" onclick="beef_with_vegetables_hide()">Click to hide the beef with vegetables</button>
+            <h1><b>Hamburger with Fries</b></h1>
             <p>$15.99</p>
-            <p><b>French Fries</b></p>
-            <p>$5.99</p>
+            <img id="img3" src="images/burger_fries.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="hamburger_with_fries_show()">Click to show the hamburger with fries</button><br>
+            <button type="button" onclick="hamburger_with_fries_hide()">Click to hide the hamburger with fries</button>
+            <h1><b>Burrito</b></h1>
+            <p>$10.99</p>
+            <img id="img4" src="images/burritos.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="burritos_show()">Click to show the burritos</button><br>
+            <button type="button" onclick="burritos_hide()">Click to hide the burritos</button>
+            <h1><b>Pasta with Pesto</b></h1>
+            <p>$15.99</p>
+            <img id="img5" src="images/pasta_with_pesto.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="pasta_with_pesto_show()">Click to show the pasta with pesto</button><br>
+            <button type="button" onclick="pasta_with_pesto_hide()">Click to hide the pasta with pesto</button>
+            <h1><b>Penne Pasta</b></h1>
+            <p>$12.99</p>
+            <img id="img6" src="images/penne_pasta.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="penne_pasta_show()">Click to show the penne pasta</button><br>
+            <button type="button" onclick="penne_pasta_hide()">Click to hide the penne pasta</button>
+            <h1><b>Poutine</b></h1>
+            <p>7.99</p>
+            <img id="img7" src="images/poutine.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="poutine_show()">Click to show the poutine</button><br>
+            <button type="button" onclick="poutine_hide()">Click to hide the poutine</button>
+            <h1><b>Salad</b></h1>
+            <p>9.99</p>
+            <img id="img8" src="images/salad1.jpg" style="display:none;" width="200px" height="200px">
+            <button type="button" onclick="salad_show()">Click to show the salad</button><br>
+            <button type="button" onclick="salad_hide()">Click on hide the salad</button>
+            <script>
+                function beef_stirfry_show(){
+                    document.getElementById("img1").style.display = "block"
+                }
+                function beef_stirfry_hide(){
+                    document.getElementById("img1").style.display = "none"
+                }
+                function beef_with_vegetables_show(){
+                    document.getElementById("img2").style.display = "block"
+                }
+                function beef_with_vegetables_hide(){
+                    document.getElementById("img2").style.display = "none"
+                }
+                function hamburger_with_fries_show(){
+                    document.getElementById("img3").style.display = "block"
+                }
+                function hamburger_with_fries_hide(){
+                    document.getElementById("img3").style.display = "none"
+                }
+                function burritos_show(){
+                    document.getElementById("img4").style.display = "block"
+                }
+                function burritos_hide(){
+                    document.getElementById("img4").style.display = "none"
+                }
+                function pasta_with_pesto_show(){
+                    document.getElementById("img5").style.display = "block"
+                }
+                function pasta_with_pesto_hide(){
+                    document.getElementById("img5").style.display = "none"
+                }
+                function penne_pasta_show(){
+                    document.getElementById("img6").style.display = "block"
+                }
+                function penne_pasta_hide(){
+                    document.getElementById("img6").style.display = "none"
+                }
+                function poutine_show(){
+                    document.getElementById("img7").style.display = "block"
+                }
+                function poutine_hide(){
+                    document.getElementById("img7").style.display = "none"
+                }
+                function salad_show(){
+                    document.getElementById("img8").style.display = "block"
+                }
+                function salad_hide(){
+                    document.getElementById("img8").style.display = "none"
+                }
+            </script>
         </main>
     <footer>
         <p>Twitter = restaurant</p>
