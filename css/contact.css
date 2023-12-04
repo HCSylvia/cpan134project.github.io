@@ -2,14 +2,17 @@ html{
     font-family: 'Times New Roman', 'Helvetica';
     color: black;
 }
+
 main{
     background-color: rgb(236, 231, 231);
 }
 main p{
     font-size: 18px;
+    text-align: center;
 }
 main h1{
     font-size: 30px;
+    text-align: center;
 }
 main h2, h3, h4, h5{
     font-size: 24px;
@@ -17,4 +20,7 @@ main h2, h3, h4, h5{
 main button{
     background-color: darkgrey;
     color: white;
+}
+main form{
+    text-align: center;
 }
