@@ -15,37 +15,6 @@ img#logo {
     
 }
 
-nav ul {
-    margin-top: 0;
-    padding-left: 0;
-    list-style-type: none;
-}
-
-nav li {
-    display: inline;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    
-}
-
-nav {
-    text-align: center;
-    margin-top: 25px;
-}
-
-body {
-    background-color: rgb(236, 231, 231);
-}
-
-footer {
-    border: 2px solid black;
-    position: relative;
-    margin-bottom: 0px;
-    width: 100%;
-    background-color: #fbc67e;;
-}
-
 /* CSS for Slideshow on home.html */
 
 #slideshow {
@@ -95,4 +64,62 @@ footer {
     width: 100%;
     height: 100%;
     margin-top: 10px;
+    border-radius: 5px;
 }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li a {
+    color: rgb(219, 188, 188);
+    text-decoration: none;
+}
+
+nav li :hover {
+    background-color: black;
+    
+    border-radius: 5px;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 2s;
+    
+}
+
+nav {
+    display: flex;
+    background-color: rgb(50 34 34 / 90%);
+    border: 2px black solid ;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* end of sylvia-exclusive elements */
+
+body {
+    background-color: rgb(236, 231, 231);
+}
+
+footer {
+    border: 2px solid black;
+    position: relative;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: #fbc67e;;
+}
+
+
+
+
