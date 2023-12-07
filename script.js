@@ -34,3 +34,9 @@ $(document).ready(function(){
     
 })
 
+$(document).ready(function() {
+    $('#reservationForm').submit(function(e) {
+        e.preventDefault();
+        alert('Reservation submitted successfully! We will contact you shortly to confirm your reservation.');
+    });
+});
