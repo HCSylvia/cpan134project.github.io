@@ -2,9 +2,7 @@ html{
     font-family: 'Times New Roman', 'Helvetica';
     color: black;
 }
-main{
-    background-color: rgb(236, 231, 231);
-}
+
 main p{
     font-size: 18px;
 }
