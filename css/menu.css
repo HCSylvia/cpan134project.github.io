@@ -2,7 +2,6 @@ html{
     font-family: 'Times New Roman', 'Helvetica';
     color: black;
 }
-
 main p{
     font-size: 18px;
 }
@@ -12,4 +11,35 @@ main h1{
 main button{
     background-color: darkgrey;
     color: white;
+}
+main section#sec1{
+    margin-left: 50px;
+}
+main section#sec2{
+    margin-left: 550px;
+    margin-top: -150px;
+}
+main section#sec3{
+    margin-left: 50px;
+}
+main section#sec4{
+    margin-left: 550px;
+    margin-top: -150px;
+}
+main section#sec5{
+    margin-left: 50px;
+}
+main section#sec6{
+    margin-left: 550px;
+    margin-top: -150px;
+}
+main section#sec7{
+    margin-left: 50px;
+}
+main section#sec8{
+    margin-left: 550px;
+    margin-top: -150px;
+}
+main section#sec9{
+    margin-left: 50px;
 }
