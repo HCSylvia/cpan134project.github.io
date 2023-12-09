@@ -8,7 +8,6 @@
     height: 575px;
     margin: auto;
     margin-top: 60px;
-    margin-bottom: 60px;
     border: 25px outset pink;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -116,5 +115,6 @@
 }
 
 main {
+    padding-bottom: 40px;
     background: linear-gradient(to right, #f7eed5e3, #ffe1bfda);
 }
