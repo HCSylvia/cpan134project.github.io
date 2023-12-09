@@ -1,0 +1,120 @@
+/* CSS for slideshow*/
+
+
+
+#slideshow {
+    text-align: center;
+    width: 600px;
+    height: 575px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 25px outset pink;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: Merienda;
+    justify-content: center;
+}
+
+.slidesection {
+    display: none;
+    height: 300px;
+    width: 400px;
+    margin: inherit;
+    font-family: inherit;
+    margin-bottom: 103px;
+    margin-top: 25px;
+}
+
+.next, .previous {  
+    background-color: pink;
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 20px 10px;
+    font-family: Merienda;
+}
+
+.caption {
+    margin-bottom: 50px;
+}
+
+.numberOf {
+    margin-top: 0px;
+}
+
+.slidesection img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#featured_section {
+    color: white;
+    width: 1000px;
+    height: 450px;
+    margin: 100px 0px 0px 300px;
+    padding: 0px 0px 50px 0px;
+}
+
+#featured_text {
+    height: 250px;
+    width: 450px;
+    float: right;
+    margin: 70px 1px 0px 20px;
+    padding: 20px 0px 0px 15px;
+    background-color: red;
+    box-shadow: black 2px 2px 5px;
+}
+
+#featured_heading {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 0px 0px 20px 0px;   
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 2px 1px 3px black;
+    
+}
+
+#featured_desc {
+    text-wrap: wrap;
+    line-height: 1.5;
+}
+
+#featured_dish {
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 4px 3px 2px green;
+    border: 3px inset black;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 2px 4px;
+    display: inline-block;
+}
+
+#openingText {
+    display: flex;
+    text-align: center;
+    width: 600px;
+    text-wrap: wrap;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-family: Merienda;
+}
+
+#featured_image {
+    border-radius: 80px;
+    height: 450px;
+    width: 450px;
+}
+
+main {
+    background: linear-gradient(to right, #f7eed5e3, #ffe1bfda);
+}
