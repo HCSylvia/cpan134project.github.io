@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header id="top">
@@ -16,95 +17,89 @@
     </header>
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="reservations.html" class="active">Reservations</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="reservations.html" class="active">RESERVATIONS</a></li>
         </ul>
     </nav>
     <main>
-        <div class="container">
-            <h2 id="resForm">Reservation Form</h2>
-            <form action="reservation.php" method="post" id="reservationForm">
-                    <label for="firstname">Your First Name: </label>
-                    <input type="text" name="firstName" id="fName" placeholder="Enter First Name" required><br><br>
-                    <label for="lastname">Your Last Name: </label>
-                    <input type="text" name="lastName" id="lName" placeholder="Enter Last Name" required><br><br>
-                    <label for="email">Your E-mail: </label>
-                    <input type="text" name="eMail" id="email" placeholder="Enter E-mail" required><br><br>
-                    <label for="phone">Your Phone Number: </label>
-                    <input type="number" name="phone" id="phone" placeholder="Enter Phone Number" required><br><br>
-                    <label for="guestNumber">Number of Guests: </label>
-                    <select name="guests" id="guestNumber" required>
-                        <option value="">How Many Guests Will Be Attending</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value=">8">For more than 8, please call the restaurant</option>
-    
-                    </select><br><br>
-                    <label for="date">Date of Reservation: </label>
-                    <input type="date" id="date" required><br><br>
-                    <label for="time">Time: </label>
-                    <select name="timeRes" id="time" required>
-                        <option value="">Select a time</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="12:30">12:30 PM</option>
-                        <option value="1:00">1:00 PM</option>
-                        <option value="1:30">1:30 PM</option>
-                        <option value="2:00">2:00 PM</option>
-                        <option value="2:30">2:30 PM</option>
-                        <option value="3:00">3:00 PM</option>
-                        <option value="3:30">3:30 PM</option>
-                        <option value="4:00">4:00 PM</option>
-                        <option value="4:30">4:30 PM</option>
-                        <option value="5:00">5:00 PM</option>
-                        <option value="5:30">5:30 PM</option>
-                        <option value="6:00">6:00 PM</option>
-                        <option value="6:30">6:30 PM</option>
-                        <option value="7:00">7:00 PM</option>
-                        <option value="7:30">7:30 PM</option>
-                        <option value="8:00">8:00 PM</option>
-                        <option value="8:30">8:30 PM</option>
-                        <option value="9:00">9:00 PM</option>
-                        <option value="9:30">9:30 PM</option>
-                        <option value="10:00">10:00 PM</option>
-                    </select><br><br>
-                    <div class="formInfo">
-                        <div class="formInfo">
-                            <input type="checkbox" class="form-check-input" id="terms" required>
-                            <label class="form-check-label" for="terms">I Agree to the Terms of Use. I give my consent to The Humber Eatery company to be in touch with me via email using the information I have provided in this form for the purpose of news, updates, and marketing.</label>
-                        </div>
-                    </div><br><br>
-                    <button type="button" onclick="submitReservation()" id="submitReservation">Submit Reservation</button>
-
-                    
-
-            </form>
-
-        </div>
-
-        <p id="confirmationMessage"></p>
-
-
-             
+        <h2 id="resForm">Reservation Form</h2>
+        <form id="reservationForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required><br>
         
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+        
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" pattern="[0-9]{10}" required><br>
+        
+            <label for="guestNumber">Number of Guests:</label>
+            <select id="guestNumber" required>
+                <option value="">How Many Guests Will be Attending:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value=">8">For more than 8, please call us.</option>
+            </select><br>
+        
+            <label for="date">Date:</label>
+            <input type="date" id="date" min="<?php echo date('Y-m-d'); ?>" required> <br>
+        
+            <label for="time">Time:</label>
+            <select id="time" required>
+                <option value="">Select a time</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="12:30">12:30 PM</option>
+                <option value="1:00">1:00 PM</option>
+                <option value="1:30">1:30 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value="2:30">2:30 PM</option>
+                <option value="3:00">3:00 PM</option>
+                <option value="3:30">3:30 PM</option>
+                <option value="4:00">4:00 PM</option>
+                <option value="4:30">4:30 PM</option>
+                <option value="5:00">5:00 PM</option>
+                <option value="5:30">5:30 PM</option>
+                <option value="6:00">6:00 PM</option>
+                <option value="6:30">6:30 PM</option>
+                <option value="7:00">7:00 PM</option>
+                <option value="7:30">7:30 PM</option>
+                <option value="8:00">8:00 PM</option>
+                <option value="8:30">8:30 PM</option>
+                <option value="9:00">9:00 PM</option>
+                <option value="9:30">9:30 PM</option>
+                <option value="10:00">10:00 PM</option>
+            </select><br><br>
+        
+            <button type="button" onclick="validateAndSubmit()" id="submitReservation">Submit Reservation</button>
+        
+            <div id="confirmationMessage" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+              Thank you for your reservation! We will call you to confirm the reservation shortly. 
+            </div>
+          </form>
 
       
 
     </main><br><br>
+
+
     <footer>
-        <p>Twitter = restaurant</p>
-        <p>Instagram = restaurant</p>
-        <p>Facebook = restaurant</p><br>
-        <p>Copyright &copy; restaurant</p>
-        <script src="script.js"></script>
+        <p class="fa fa-twitter">&nbsp; Twitter = @humber_eatery</p><br>
+        <p class="fa fa-instagram">&nbsp; Instagram = @humber_eatery</p><br>
+        <p class="fa fa-facebook">&nbsp; Facebook = @humber_eatery</p><br>
+        <p>Copyright &copy; The Humber Eatery</p>
+        <script src="reservations.js"></script>
     
     </footer>
 </body>

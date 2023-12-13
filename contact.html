@@ -6,11 +6,12 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/contact.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header id="top">
             <h1 title="Humber Eatery" id="humbereatlogo">The Humber Eatery</h1>
-            <img src="images/humber_eateryLogo.png" alt="Website logo" id="logo" width="170" height="150">
+            <img src="images/humber_eateryLogo.png" alt="Website logo" id="logo" width="175" height="180">
         </header>
         <nav>
             <ul>
@@ -26,32 +27,56 @@
             <p>If you have any questions or concerns you can call us at 416-376-9980</p>
             <p>You can also email us at contact@humbereatery.ca</p>
             <p>You can also contact us through the form below if you have any complaints</p>
-            <form>
+            <form id="form">
                 <label for="firstName">First Name:</label>
-                <input type="text" placeholder="Enter your first name"><br>
+                <input id="firstName" type="text" placeholder="Enter your first name"><br>
                 <label for="lastName">Last name:</label>
-                <input type="text" placeholder="Enter your last name:"><br>
+                <input id="lastName" type="text" placeholder="Enter your last name:"><br>
                 <label for="email">Email:</label>
-                <input type="email" placeholder="Enter your Email"><br>
+                <input id="email" type="email" placeholder="Enter your Email"><br>
                 <label for="dateOfIssue">Date of issue</label>
-                <input type="date" placeholder="Enter the date when you had your issue"><br>
-                <label for="Complaint">Complaint</label>
-                <input type="text" placeholder="Enter your complaint"><br>
+                <input id="dateOfIssue" type="date" placeholder="Enter the date when you had your issue"><br>
+                <label for="complaint">Complaint</label>
+                <input  id="complaint" type="text" placeholder="Enter your complaint"><br>
+                <p>When entering your email please make sure that it is a valid email otherwise we will not be able to contact you.</p>
                 <p id="sub_text" style="display:none;">Thank you for submitting your complaint</p>
+                <p id="error"></p>
                 <script>
-                    function submission_text(){
-                        document.getElementById("sub_text").style.display = "block"
+                    function validate(){
+                        let fname = document.forms["form"]["firstName"].value;
+                        let lname = document.forms["form"]["lastName"].value;
+                        let email = document.forms["form"]["email"].value;
+                        let dateOfIssue = document.forms["form"]["dateOfIssue"].value;
+                        let complaint = document.forms["form"]["complaint"].value;
+                        if(fname == ""){
+                            document.getElementById("error").innerHTML = "Please enter your first name";
+                        }
+                        else if(lname == ""){
+                            document.getElementById("error").innerHTML = "Please enter your last name";
+                        }
+                        else if(email == ""){
+                            document.getElementById("error").innerHTML = "Please enter your email";
+                        }
+                        else if(dateOfIssue == ""){
+                            document.getElementById("error").innerHTML = "Please enter a date";
+                        }
+                        else if(complaint == ""){
+                            document.getElementById("error").innerHTML = "Please enter your complaint";
+                        }
+                        else{
+                            document.getElementById("error").style.display = "none";
+                            document.getElementById("sub_text").style.display = "block";
+                        }
                     }
                 </script>
-                <button type="button" onclick="submission_text()">Submit</button>
+                <button type="button" onclick="validate()">Submit</button>
             </form>
         </main>
-    <footer>
-        <p>Twitter = restaurant</p>
-        <p>Instagram = restaurant</p>
-        <p>Facebook = restaurant</p><br>
-        <p>Copyright &copy; restaurant</p>
-        <p>Address: 139 Bloor</p>
-    </footer>
+        <footer>
+            <p class="fa fa-twitter">&nbsp; Twitter = @humber_eatery</p><br>
+            <p class="fa fa-instagram">&nbsp; Instagram = @humber_eatery</p><br>
+            <p class="fa fa-facebook">&nbsp; Facebook = @humber_eatery</p><br>
+            <p>Copyright &copy; The Humber Eatery</p>
+        </footer>
     </body>
 </html>
