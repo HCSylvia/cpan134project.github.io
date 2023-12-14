@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/menu.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header id="top">
@@ -86,67 +87,157 @@
                 <button type="button" onclick="guac_salad_hide()">Click to hide the salad with guacamole</button>
             </section>
             <script>
+                function reset(){
+                    document.getElementById("img1").style.display = "none";
+                    document.getElementById("img2").style.display = "none";
+                    document.getElementById("img3").style.display = "none";
+                    document.getElementById("img4").style.display = "none";
+                    document.getElementById("img5").style.display = "none";
+                    document.getElementById("img6").style.display = "none";
+                    document.getElementById("img7").style.display = "none";
+                    document.getElementById("img8").style.display = "none";
+                    document.getElementById("img9").style.display = "none";
+                }
+                function reset_pos(){
+                    document.getElementById("sec1").style.margin = "0px";
+                    document.getElementById("sec2").style.margin = "0px";
+                    document.getElementById("sec3").style.margin = "0px";
+                    document.getElementById("sec4").style.margin = "0px";
+                    document.getElementById("sec5").style.margin = "0px";
+                    document.getElementById("sec6").style.margin = "0px";
+                    document.getElementById("sec7").style.margin = "0px";
+                    document.getElementById("sec8").style.margin = "0px";
+                    document.getElementById("sec9").style.margin = "0px";
+                }
+                function replace(){
+                    document.getElementById("sec1").style.marginLeft = "50px";
+                    document.getElementById("sec2").style.marginLeft = "550px";
+                    document.getElementById("sec2").style.marginTop = "-150px";
+                    document.getElementById("sec3").style.marginLeft = "50px";
+                    document.getElementById("sec4").style.marginLeft = "550px";
+                    document.getElementById("sec4").style.marginTop = "-150px";
+                    document.getElementById("sec5").style.marginLeft = "50px";
+                    document.getElementById("sec6").style.marginLeft = "550px";
+                    document.getElementById("sec6").style.marginTop = "-150px";
+                    document.getElementById("sec7").style.marginLeft = "50px";
+                    document.getElementById("sec8").style.marginLeft = "550px";
+                    document.getElementById("sec8").style.marginTop = "-150px";
+                    document.getElementById("sec9").style.marginLeft = "50px";
+                }
                 function beef_stirfry_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img1").style.display = "block";
+                    document.getElementById("sec2").style.marginTop = "-350px";
+                    document.getElementById("sec3").style.marginTop = "220px";
                 }
                 function beef_stirfry_hide(){
                     document.getElementById("img1").style.display = "none";
+                    reset_pos()
+                    replace()
                 }
                 function beef_with_vegetables_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img2").style.display = "block";
                 }
                 function beef_with_vegetables_hide(){
                     document.getElementById("img2").style.display = "none";
+                    reset_pos()
+                    replace()
                 }
                 function hamburger_with_fries_show(){
-                    document.getElementById("img3").style.display = "block"
+                    reset()
+                    reset_pos()
+                    replace()
+                    document.getElementById("img3").style.display = "block";
+                    document.getElementById("sec4").style.marginTop = "-350px";
+                    document.getElementById("sec5").style.marginTop = "220px";
                 }
                 function hamburger_with_fries_hide(){
                     document.getElementById("img3").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
                 function burritos_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img4").style.display = "block"
                 }
                 function burritos_hide(){
                     document.getElementById("img4").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
                 function pasta_with_pesto_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img5").style.display = "block"
+                    document.getElementById("sec6").style.marginTop = "-350px";
+                    document.getElementById("sec7").style.marginTop = "220px";
                 }
                 function pasta_with_pesto_hide(){
                     document.getElementById("img5").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
                 function penne_pasta_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img6").style.display = "block"
                 }
                 function penne_pasta_hide(){
                     document.getElementById("img6").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
                 function poutine_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img7").style.display = "block"
+                    document.getElementById("sec8").style.marginTop = "-350px";
+                    document.getElementById("sec9").style.marginTop = "220px";
                 }
                 function poutine_hide(){
                     document.getElementById("img7").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
                 function salad_show(){
+                    reset()
+                    reset_pos()
+                    replace()
                     document.getElementById("img8").style.display = "block"
                 }
                 function salad_hide(){
                     document.getElementById("img8").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
                 function guac_salad_show(){
-                    document.getElementById("img9").style.display = "block"
+                    reset()
+                    reset_pos()
+                    replace()
+                    document.getElementById("img9").style.display = "block";
                 }
                 function guac_salad_hide(){
                     document.getElementById("img9").style.display = "none"
+                    reset_pos()
+                    replace()
                 }
             </script>
         </main>
-    <footer>
-        <p>Twitter = restaurant</p>
-        <p>Instagram = restaurant</p>
-        <p>Facebook = restaurant</p><br>
-        <p>Copyright &copy; restaurant</p>
-    </footer>
+        <footer>
+            <p class="fa fa-twitter">&nbsp; Twitter = @humber_eatery</p><br>
+            <p class="fa fa-instagram">&nbsp; Instagram = @humber_eatery</p><br>
+            <p class="fa fa-facebook">&nbsp; Facebook = @humber_eatery</p><br>
+            <p>Copyright &copy; The Humber Eatery</p>
+        </footer>
     </body>
 </html>

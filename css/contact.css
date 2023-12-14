@@ -15,4 +15,5 @@ main button{
 }
 main form{
     text-align: center;
+    display: block;
 }
