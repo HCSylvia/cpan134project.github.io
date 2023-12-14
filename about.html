@@ -22,7 +22,27 @@
             <li><a href="contact.html">CONTACT US</a></li>
             <li><a href="reservations.html">RESERVATIONS</a></li>
         </ul>
+        <a href="javascript:void(0);" id="smallScreenIcon" onclick="openNav()">&#9776;</a>
     </nav>
+    <!-- Start of mobile nav bar -->
+    
+    <section id="mobileNav">
+        <a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+        <div id=navOverlay>
+            <a href="home.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="reservations.html">RESERVATIONS</a>
+            <div id="socialIcons">
+                <a class="fa fa-twitter" href="#"></a>
+                <a class="fa fa-instagram" href="#"></a>
+                <a class="fa fa-facebook" href="#"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of mobile nav bar -->
     <main>
         <h2 id="aboutUs">About Us</h2>
         
@@ -44,10 +64,10 @@
         </p>
     </main>
     <footer>
-        <p class="fa fa-twitter">&nbsp; Twitter = @humber_eatery</p><br>
-        <p class="fa fa-instagram">&nbsp; Instagram = @humber_eatery</p><br>
-        <p class="fa fa-facebook">&nbsp; Facebook = @humber_eatery</p><br>
-        <p>Copyright &copy; The Humber Eatery</p>
+        <p class="fa fa-twitter">&nbsp; Twitter = <a href="">@humber_eatery</a></p><br>
+        <p class="fa fa-instagram">&nbsp; Instagram = <a href="">@humber_eatery</a></p><br>
+        <p class="fa fa-facebook">&nbsp; Facebook = <a href="">@humber_eatery</a></p><br>
+        <p>The Humber Eatery&copy;</p>
     </footer>
 </body>
 </html>

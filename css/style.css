@@ -33,6 +33,24 @@ img#logo {
     
 }
 
+/* @media (max-width: 920px) {
+    #humbereatlogo {
+        position: absolute;
+        right: 0;
+        top: ;
+        z-index: 1;
+        display: block;
+
+    }
+
+    #logo {
+        position: absolute;
+        left: 10px;
+        z-index: 1;
+
+    }
+} */
+
 /* Nav bar CSS */
 
 nav ul {
@@ -70,7 +88,6 @@ nav li {
 nav {
     display: flex;
     background-color: rgb(50 34 34);
-    border: 2px black solid;
     height: 60px;
     width: 100%;
     position: sticky;
@@ -82,6 +99,88 @@ nav {
     justify-content: center;
 }
 
+/* Mobile Nav CSS */
+
+#mobileNav {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(50 34 34);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#navOverlay {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#mobileNav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(219, 188, 188);
+    display: block;
+    transition: 0.3s;
+}
+
+#mobileNav a:hover {
+    color: red;
+}
+
+#closeButton {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#socialIcons a {
+    font-size: 24px;
+}
+
+#smallScreenIcon {
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #mobileNav a {font-size: 20px}
+    #closeButton {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 825px) {
+    #smallScreenIcon {
+        display: block;
+    }
+    nav li {
+        display: none;
+    }
+}
+
 body {
     background-color: rgb(236, 231, 231);
     margin: auto;
@@ -90,7 +189,6 @@ body {
 h2#resForm{
     font-size: 30px;
     margin-left: 485px;
-
 }
 
 #reservationForm {
@@ -155,9 +253,15 @@ footer p {
     margin-block-end: 0px;
 }
 
+footer a {
+    color: black;
+    font-family: Merienda;
+}
+
 body {
     background: linear-gradient(to right, #f7eed5e3, #ffe1bfda);
 }
+
 
 
 
