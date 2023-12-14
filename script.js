@@ -30,29 +30,3 @@ function displayImage(indexNum) {
 
 }
 
-function submitReservation(){
-
-    // let fName = document.forms["reservationForm"]["fName"].value;
-    let fName = document.getElementById("fName").value;
-    // let lName = document.forms["reservationForm"]["lName"].value;
-    let lName = document.getElementById("lName").value;
-    // let email = document.forms["reservationForm"]["email"].value;
-    let email = document.getElementById("email").value;
-    // let phone = document.forms["reservationForm"]["phone"].value;
-    let phone = document.getElementById("phone").value;
-    let guestNumber = document.getElementById("guestNumber").value;
-    let date = document.getElementById("date").value
-    // let date = document.forms["reservationForm"]["date"].value;
-    let time = document.getElementById("time").value;
-
-    if (fName && lName && email && phone && guestNumber && date && time){
-        document.getElementById("confirmationMessage").innerHTML = fName + " " + lName + "Reservation submitted successfully! We will contact you shortly to confirm your reservation"; 
-
-    }else {
-        document.getElementById("confirmationMessage").innerHTML = "Please fill in all the fields"; 
-    }
-
-
-}
-
-    
